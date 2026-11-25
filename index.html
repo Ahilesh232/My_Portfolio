@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ahilesh V — Software Developer | Python, AI &amp; Data Science</title>
+  <meta name="description"
+    content="Portfolio of Ahilesh V, Computer Science graduate and software developer building AI-powered applications with Python, FastAPI, React.js, SQL, LLMs and RAG.">
+  <meta name="theme-color" content="#0b0c10">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ahilesh V — Software Developer">
+  <meta property="og:description" content="AI-powered apps with Python, FastAPI, React.js, SQL, LLMs and RAG.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b0c10'/%3E%3Ctext x='50' y='66' font-size='56' text-anchor='middle' fill='%23a78bfa' font-family='sans-serif' font-weight='700'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- INTRO TYPING PRELOADER -->
+  <div class="intro-loader" id="introLoader" role="dialog" aria-modal="true" aria-label="Loading Ahilesh V portfolio">
+    <div class="intro-loader__bg" aria-hidden="true">
+      <div class="intro-loader__glow"></div>
+      <div class="intro-loader__grid"></div>
+    </div>
+    <div class="intro-loader__card">
+      <div class="intro-loader__meta">
+        <span class="intro-loader__dot"></span>
+        <span class="intro-loader__tag" id="introTag">// INITIALIZING</span>
+        <span class="intro-loader__percent" id="introPercent">0%</span>
+      </div>
+      <div class="intro-loader__heading">
+        <span class="intro-loader__typed" id="introTyped"></span><span class="intro-loader__cursor" id="introCursor"
+          aria-hidden="true"></span>
+      </div>
+      <div class="intro-loader__track" aria-hidden="true">
+        <div class="intro-loader__bar" id="introBar"></div>
+      </div>
+      <div class="intro-loader__sub" id="introSub">
+        <span>SOFTWARE DEVELOPER</span>
+        <span class="intro-loader__sep">•</span>
+        <span>PYTHON · AI · DATA</span>
+      </div>
+    </div>
+    <button class="intro-loader__skip" id="introSkip" aria-label="Skip intro">SKIP <span>[ESC]</span></button>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo" aria-label="Ahilesh — home">AHILESH<span>.</span></a>
+      <nav class="nav__menu" id="navMenu" aria-label="Primary">
+        <ul class="nav__list" id="navList">
+          <li><a href="#home" class="nav__link">Overview</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#journey" class="nav__link">Experience</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+          <span class="nav__indicator" id="navIndicator" aria-hidden="true"></span>
+        </ul>
+        <div class="nav__actions">
+          <a href="https://github.com/Ahilesh232" class="other-world-btn" id="otherWorldBtn" title="Explore my GitHub">
+            <span class="ow-icon" aria-hidden="true">
+              <svg viewBox="0 0 512 512" width="14" height="14" fill="currentColor">
+                <path
+                  d="M493.7 .9L299.4 75.6l2.3-29.3c1-12.8-12.8-21.5-24-15.1L101.3 133.4C38.6 169.7 0 236.6 0 309C0 421.1 90.9 512 203 512c72.4 0 139.4-38.6 175.7-101.3L480.8 234.3c6.5-11.1-2.2-25-15.1-24l-29.3 2.3L511.1 18.3c.6-1.5 .9-3.2 .9-4.8C512 6 506 0 498.5 0c-1.7 0-3.3 .3-4.8 .9zM192 192a128 128 0 1 1 0 256 128 128 0 1 1 0-256zm0 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm16 96a16 16 0 1 0 0-32 16 16 0 1 0 0 32z" />
+              </svg>
+            </span>
+            <span class="ow-text">Other World</span>
+          </a>
+          <button class="sfx-toggle" id="sfxToggle" aria-label="Toggle sound effects" title="Toggle sound effects">
+            <span class="sfx-icon">🔈</span>
+            <span class="sfx-label">SFX: OFF</span>
+          </button>
+          <a href="assets/Ahilesh_Resume.pdf" class="btn btn--sm btn--resume js-resume nav__resume" target="_blank"
+            rel="noopener">Resume</a>
+        </div>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__image-bg" data-speed="0.18"></div>
+        <div class="hero__sky"></div>
+        <div class="hero__glow" data-speed="0.1"></div>
+        <canvas id="stars" class="hero__stars"></canvas>
+        <div class="hero__fog hero__fog--1"></div>
+        <div class="hero__fog hero__fog--2"></div>
+        <div class="hero__vignette"></div>
+      </div>
+
+      <div class="container hero__content">
+        <div class="hero__kicker-badge hero__in">
+          <span class="hero__kicker-dot"></span>
+          <span class="hero__kicker-text"
+            data-phrases='["// PYTHON DEVELOPER", "// AI &amp; DATA SCIENTIST", "// AI Engineer &amp; RAG APPLICATIONS", "// CSE GRADUATE"]'>//
+            SOFTWARE DEVELOPER &bull; AI &amp; DATA SCIENCE</span>
+        </div>
+        <h1 class="hero__title hero__in">
+          <span class="hero__title-line">BUILDING SMART</span>
+          <span class="hero__title-line">SOFTWARE THAT <span class="hero__accent">THINKS.</span></span>
+        </h1>
+        <p class="hero__desc hero__in">Computer Science Engineering graduate with hands-on experience in Python, SQL,
+          FastAPI, React.js and AI. I build RAG and LLM-powered applications that turn data into answers and decisions.
+        </p>
+        <div class="hero__actions hero__in" style="--d:.75s">
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">Explore Projects <span aria-hidden="true">→</span></a>
+            <a href="#about" class="btn btn--ghost">About Me</a>
+            <a href="assets/Ahilesh_V_Resume.pdf" class="btn btn--ghost js-resume" target="_blank" rel="noopener">Resume
+              ↗</a>
+          </div>
+          <div class="hero__divider" aria-hidden="true"></div>
+          <div class="hero__social">
+            <a href="https://github.com/Ahilesh232" target="_blank" rel="noopener" class="hero__pill"
+              aria-label="GitHub profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.08 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z" />
+              </svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/ahilesh-v-b1ab7829b" target="_blank" rel="noopener" class="hero__pill"
+              aria-label="LinkedIn profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z" />
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Quick Stats Strip -->
+        <div class="hero__stats hero__in" style="--d:.85s">
+          <div class="hero__stat">
+            <span class="hero__stat-val">06 +</span>
+            <span class="hero__stat-lbl">Projects Built</span>
+          </div>
+          <div class="hero__stat-sep" aria-hidden="true"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-val">03 +</span>
+            <span class="hero__stat-lbl">Internships</span>
+          </div>
+          <div class="hero__stat-sep" aria-hidden="true"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-val">8.16</span>
+            <span class="hero__stat-lbl">B.E. CGPA</span>
+          </div>
+          <div class="hero__stat-sep" aria-hidden="true"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-val">AI</span>
+            <span class="hero__stat-lbl">LLM Applications</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section"><span>Scroll</span><i></i></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__media reveal">
+          <div class="about__frame">
+            <div class="about__initials" aria-hidden="true">AV</div>
+            <img id="profileImg" alt="Portrait of Ahilesh V" loading="lazy" width="480" height="600">
+            <div class="about__badge"><b>AI</b><span>Python &amp;<br>Data Science</span></div>
+          </div>
+        </div>
+        <div class="about__text">
+          <p class="kicker reveal"
+            data-phrases='["// ABOUT ME", "// AI &amp; DATA SCIENCE ENTHUSIAST", "// PROBLEM SOLVER"]'>// ABOUT ME</p>
+          <h2 class="h2 reveal">From Raw Data To Intelligent, Working Software.</h2>
+          <p class="lead reveal">I'm Ahilesh V, a Computer Science Engineering graduate from Dindigul, Tamil Nadu. I
+            work with Python, SQL, FastAPI and React.js, and I'm passionate about solving real-world problems through
+            data-driven solutions and scalable AI applications.</p>
+          <p class="reveal">I completed Data Science &amp; AI training at Besant Technologies and internships at Infosys
+            Springboard, Innervex Technologies and Karthikesh Robotics. My projects include an SQL-RAG analytics
+            platform, an AI contract analyser, a business analytics platform and a healthcare recommendation system.</p>
+          <ul class="tech-tags reveal">
+            <li><span>PY</span> Python Development</li>
+            <li><span>API</span> FastAPI Backends</li>
+            <li><span>RE</span> React.js Frontends</li>
+            <li><span>SQL</span> SQL &amp; Data Analytics</li>
+            <li><span>AI</span> LLMs, RAG &amp; LangChain</li>
+            <li><span>BI</span> Power BI &amp; Visualization</li>
+          </ul>
+        </div>
+
+        <div class="hud-card hud-card--full reveal">
+          <div class="hud-card__header">
+            <span class="hud-card__dot"></span>
+            <span class="hud-card__title">DEVELOPER PROFILE // HUD</span>
+            <span class="hud-card__status">OPEN TO WORK</span>
+          </div>
+          <div class="hud-card__grid">
+            <div class="hud-card__item">
+              <span class="hud-card__lbl">CORE LANGUAGE</span>
+              <b class="hud-card__val">Python &amp; SQL</b>
+            </div>
+            <div class="hud-card__item">
+              <span class="hud-card__lbl">STACK</span>
+              <b class="hud-card__val">FastAPI &amp; React.js</b>
+            </div>
+            <div class="hud-card__item">
+              <span class="hud-card__lbl">AI FOCUS</span>
+              <b class="hud-card__val">LLMs, RAG &amp; ML</b>
+            </div>
+            <div class="hud-card__item">
+              <span class="hud-card__lbl">TARGET ROLE</span>
+              <b class="hud-card__val">Software / AI-ML Engineer</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <p class="kicker reveal"
+            data-phrases='["// SELECTED PROJECTS", "// AI &amp; FULL STACK", "// RAG &amp; ANALYTICS"]'>// SELECTED
+            PROJECTS</p>
+          <h2 class="h2 reveal">Projects I've Built</h2>
+          <p class="section__sub reveal">AI-powered applications, analytics platforms and web apps. Open a card for
+            features, tech stack and source code.</p>
+        </div>
+        <div class="filters reveal" role="group" aria-label="Filter projects" id="filters"></div>
+        <div class="showcase" id="showcase" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <p class="kicker reveal"
+            data-phrases='["// TECHNICAL SKILLS", "// LANGUAGES &amp; FRAMEWORKS", "// AI &amp; DATA STACK"]'>//
+            TECHNICAL SKILLS</p>
+          <h2 class="h2 reveal">Tools &amp; Tech I Work With</h2>
+          <p class="section__sub reveal">Languages, frameworks, data tools and AI libraries I use to build and ship
+            projects.</p>
+        </div>
+        <div class="skills__grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="section journey" id="journey">
+      <div class="container journey__wrap">
+        <div class="journey__intro">
+          <p class="kicker reveal"
+            data-phrases='["// EXPERIENCE &amp; EDUCATION", "// INTERNSHIPS &amp; TRAINING", "// CERTIFICATIONS"]'>//
+            EXPERIENCE &amp; EDUCATION</p>
+          <h2 class="h2 reveal">Experience, Education &amp; Training</h2>
+          <p class="reveal">Internships, training, certifications and academic background.</p>
+        </div>
+        <ol class="timeline" id="timeline"></ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="contact__bg" aria-hidden="true"></div>
+      <div class="container contact__inner">
+        <p class="kicker reveal" data-phrases='["// GET IN TOUCH", "// OPEN FOR ROLES", "// LETS BUILD TOGETHER"]'>
+          // GET IN TOUCH
+        </p>
+        <h2 class="contact__title reveal">LET'S BUILD SOMETHING USEFUL.</h2>
+        <p class="lead reveal">I'm looking for opportunities as a Software Engineer, Python Developer, Data Analyst,
+          Data Scientist, AI/ML Engineer or Data Engineer, where I can contribute technical expertise while continuing
+          to grow.</p>
+
+        <form class="contact-form reveal" onsubmit="sendToGmail(event)">
+          <div class="form-group">
+            <input type="text" id="senderName" class="contact-inputs" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="senderEmail" class="contact-inputs" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <textarea id="senderMessage" class="contact-inputs" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <div class="contact__links reveal" id="contactLinks"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#home" class="nav__logo">Ahilesh<span>.</span></a>
+      <p>© <span id="year"></span> Ahilesh V. Software Developer.</p>
+      <p><a href="https://github.com/Ahilesh232" target="_blank" rel="noopener">GitHub ↗</a></p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg></button>
+
+  <!-- Project modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" tabindex="-1">
+      <button class="modal__close" data-close aria-label="Close project details">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+
+  <!-- Dimensional Warp Portal Overlay -->
+  <div id="portalVortexOverlay" class="portal-overlay" aria-hidden="true">
+    <canvas id="warpTunnelCanvas"></canvas>
+    <div class="warp-center">
+      <div class="portal-iris">
+        <div class="iris-ring"></div>
+        <div class="iris-core">
+          <svg viewBox="0 0 512 512" width="28" height="28" fill="currentColor" aria-hidden="true">
+            <path
+              d="M493.7 .9L299.4 75.6l2.3-29.3c1-12.8-12.8-21.5-24-15.1L101.3 133.4C38.6 169.7 0 236.6 0 309C0 421.1 90.9 512 203 512c72.4 0 139.4-38.6 175.7-101.3L480.8 234.3c6.5-11.1-2.2-25-15.1-24l-29.3 2.3L511.1 18.3c.6-1.5 .9-3.2 .9-4.8C512 6 506 0 498.5 0c-1.7 0-3.3 .3-4.8 .9zM192 192a128 128 0 1 1 0 256 128 128 0 1 1 0-256zm0 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm16 96a16 16 0 1 0 0-32 16 16 0 1 0 0 32z" />
+          </svg>
+        </div>
+      </div>
+      <div class="warp-hud">
+        <span class="warp-hud-tag">// DIMENSIONAL WARP</span>
+        <h2 class="warp-hud-title">Other World</h2>
+        <span class="warp-hud-realm">TELEPORTING TO GITHUB REALM</span>
+        <div class="warp-meter">
+          <div class="warp-meter-bar"></div>
+        </div>
+      </div>
+    </div>
+    <div class="warp-flare" id="warpFlare"></div>
+  </div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
